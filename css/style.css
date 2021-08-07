@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: 'Gilroy';
 }
 
@@ -23,7 +24,7 @@ a {
   list-style: none;
 }
 
-.header{
+.header {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -73,7 +74,7 @@ a {
   display: flex;
 }
 
-.header__lang{
+.header__lang {
   height: 100%;
   width: 35px;
   border-radius: 14px;
@@ -83,21 +84,22 @@ a {
   transition: 0.5s linear;
 }
 
-.input{
+.input {
   position: absolute;
   top: -30px;
   opacity: 0;
 }
 
 
-#ru:checked~.ru{
-  background: #4EAAE0;
-}
-#en:checked~.en{
+#ru:checked~.ru {
   background: #4EAAE0;
 }
 
-.block{
+#en:checked~.en {
+  background: #4EAAE0;
+}
+
+.block {
   width: 200px;
   height: 100px;
   border: 2px solid aqua;
@@ -109,33 +111,33 @@ a {
   overflow: hidden;
 }
 
-.block__item{
+.block__item {
   width: 90%;
   height: 90%;
   background: rgba(0, 110, 255, 0.616);
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translate(110%) ;
+  transform: translate(110%);
   transition: 1s cubic-bezier(0.175, 0.885, 0.32, 2);
-  
+
 }
 
-.block:hover .block__item{
+.block:hover .block__item {
   transform: translate(0%) rotate(360deg);
 }
 
-.header__block{
+.header__block {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;  
+  background-size: cover;
   flex-grow: 1;
   display: flex;
 }
 
 
-.header__info{
+.header__info {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -143,6 +145,55 @@ a {
   align-items: center;
 }
 
-.header__title{
-  
+.footer {
+  height: 739px;
+  background: linear-gradient(195.2deg, #2E9ADB 10.68%, #55B570 89.32%);
+}
+
+.footer__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: white;
+  margin-top: 136px;
+}
+
+.z-text {
+  height: 80px;
+  width: 730px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  margin-bottom: 20px;
+  padding: 30px;
+  outline: none;
+  border: none;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 38px;
+}
+
+.footer__btn {
+  width: 350px;
+  height: 80px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 40px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
 }
